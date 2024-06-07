@@ -29,9 +29,10 @@
                     <asp:ListItem Text="Select City" Value="Select"></asp:ListItem>
                     <asp:ListItem Text="Kolhapur" Value="Kolhapur"></asp:ListItem>
                     <asp:ListItem Text="Pune" Value="Pune"></asp:ListItem>
+                    <asp:ListItem Text="Delhi" Value="Delhi"></asp:ListItem>
                 </asp:DropDownList>
             </div>
-            <asp:Button runat="server" ID="btnSubmit" Text="Submit" CssClass="btn btn-success" />
+            <asp:Button OnClick="btnSubmit_Click" runat="server" ID="btnSubmit" Text="Submit" CssClass="btn btn-success" />
             
         </div>
     </div>
