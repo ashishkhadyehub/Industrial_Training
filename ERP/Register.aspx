@@ -55,19 +55,19 @@
         let emailcon = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([com\co\.\in])+$/;
         
         if (name == "" || email == "" || phone == "" || dept == "Select") {
-            alert("Please fill all details to proceed..!");
+            swal("Please fill all details to proceed..!","","error");
             return false;
         }
         if (phone != '') {
             if (!phone.match(mobilecon)) {
-                alert("Please Enter Valid Contact Number");
+                swal("Please Enter Valid Contact Number","","warning");
                 return false;
 
             }
         }
         if (email != '') {
             if (!email.match(emailcon)) {
-                alert("Please Enter Valid Email-Id");
+                swal("Please Enter Valid Email-Id","","warning");
                 return false;
             }
         }

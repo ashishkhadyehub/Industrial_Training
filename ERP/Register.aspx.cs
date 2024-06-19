@@ -33,7 +33,8 @@ namespace ERP
             txtName.Text=string.Empty;
             txtEmail.Text = string.Empty;
             ddldept.SelectedIndex = 0;
-            Response.Write("<script>alert('Registered Successfully..!')</script>");
+            this.ClientScript.RegisterStartupScript(this.GetType(), "SweetAlert", "swal('Registered Successfully..!','','success');", true);
+            //Response.Write("<script>alert('Registered Successfully..!')</script>");
         }
     }
 }
